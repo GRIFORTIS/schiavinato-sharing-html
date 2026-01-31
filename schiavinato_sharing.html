@@ -27,26 +27,42 @@ SOFTWARE.
 ⚠️ WARNING: EXPERIMENTAL SOFTWARE ⚠️
 ==========================================================================
 
-This is an experimental, open-source project. Do NOT use it for important
-assets at this stage.
+DO NOT USE IT FOR REAL FUNDS!
 
-TERMS OF USE & LIABILITY DISCLAIMER:
+Schiavinato Sharing specification and implementations have NOT been audited. Use 
+for testing, learning, and experimentation only.
 
-1. You must verify this file's authenticity BEFORE use.
-   Verify the GPG signature to ensure this file hasn't been tampered with.
-   Download from: github.com/GRIFORTIS/schiavinato-sharing-spec/releases
-   Verification instructions: See repository README section "Verifying Release Authenticity"
-   Expected GPG fingerprint: 7921 FD56 9450 8DA4 020E  671F 4CFE 6248 C57F 15DF
+We invite cryptographers and developers to review the spec and contribute.
 
-2. You must be offline.
-   This tool is designed for air-gapped environments only. Disconnect from
-   all networks before proceeding.
+TERMS OF USE
 
-3. You must use a secure environment.
-   For maximum security, use a temporary, trusted operating system (e.g.,
-   Tails) or a fresh OS install on a secure computer.
+1) VERIFY AUTHENTICITY & INTEGRITY (REQUIRED)
+   Download ONLY from official GRIFORTIS GitHub Releases for "schiavinato-sharing-html".
+   For a given version, you should have:
+     - schiavinato_sharing.html
+     - schiavinato_sharing.html.asc   (GPG signature)
+     - CHECKSUMS.txt + CHECKSUMS.txt.asc (optional but recommended)
 
-4. You are 100% responsible.
+   Verification (offline):
+     a) Import the GRIFORTIS public key (GRIFORTIS-PGP-PUBLIC-KEY.asc)
+     b) Verify fingerprint matches EXACTLY:
+        7921 FD56 9450 8DA4 020E  671F 4CFE 6248 C57F 15DF
+        If it does not match, DO NOT proceed.
+     c) Verify the HTML file signature:
+        gpg --verify schiavinato_sharing.html.asc schiavinato_sharing.html
+     d) (Optional) Verify checksums:
+        gpg --verify CHECKSUMS.txt.asc CHECKSUMS.txt
+        sha256sum -c CHECKSUMS.txt --ignore-missing
+
+2) AIR-GAPPED OPERATION (REQUIRED)
+   Disconnect from all networks before proceeding. This tool is intended for
+   offline / air-gapped use.
+
+3) SECURE ENVIRONMENT (RECOMMENDED)
+   For maximum security, use a temporary trusted OS (e.g., Tails) or a fresh
+   OS install on a secure computer.
+
+4) LIABILITY DISCLAIMER
    GRIFORTIS and its contributors are not responsible for any loss of funds,
    data corruption, or any other damages that may result from using this
    software. Use at your own risk.
@@ -722,12 +738,12 @@ TERMS OF USE & LIABILITY DISCLAIMER:
                 <div class="component-card">
                     <h2 style="color: var(--error-red); text-align: center;">⚠️ WARNING: EXPERIMENTAL SOFTWARE ⚠️</h2>
                     <p style="text-align: center; font-weight: 600;">
-                        This is an experimental, open-source project. Do NOT use it for important assets at this stage.
+                        This software has NOT been audited. Use for testing, learning, and experimentation only.
                     </p>
                     <hr>
                     <h3>Terms of Use & Liability Disclaimer</h3>
                     <ul>
-                        <li><strong>You must verify this file's authenticity.</strong> Before using this tool with real crypto seeds, verify the GPG signature to ensure the file hasn't been tampered with. Instructions are in the GitHub repository README under "Verifying Release Authenticity".</li>
+                        <li><strong>You must verify this file's authenticity.</strong> Before using this tool with real crypto seeds, verify the GPG signature to ensure the file hasn't been tampered with. Instructions are in the GitHub repository README under "Verify Before Use (Required)".</li>
                         <li><strong>You must be offline.</strong> This tool is designed for air-gapped environments only. Disconnect from all networks before proceeding.</li>
                         <li><strong>You must use a secure environment.</strong> For maximum security, use a temporary, trusted operating system (e.g., Tails) or a fresh OS install on a secure computer.</li>
                         <li><strong>You are 100% responsible.</strong> GRIFORTIS and its contributors are not responsible for any loss of funds, data corruption, or any other damages that may result from using this software. Use at your own risk.</li>

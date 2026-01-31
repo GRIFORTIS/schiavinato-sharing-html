@@ -1,10 +1,13 @@
 # Security Policy (HTML Implementation)
 
-> ## ⚠️ EXPERIMENTAL - NOT AUDITED - DO NOT USE FOR REAL FUNDS
+> ## ⚠️ WARNING: EXPERIMENTAL SOFTWARE ⚠️
+> 
+>DO NOT USE IT FOR REAL FUNDS!
 >
-> This specification has NOT been audited. Use only for testing, learning, and experimentation. **We invite cryptographers and developers to review the spec and contribute.**
+> Schiavinato Sharing specification and implementations have NOT been audited. Use for testing, learning, and experimentation only. See [Security](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md) for details.
 >
-> **[See Security Status](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md) for details.**
+>We invite **cryptographers** and **developers** to review the spec and software. See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/CONTRIBUTING.md) to know more.
+
 
 ## Canonical security policy
 

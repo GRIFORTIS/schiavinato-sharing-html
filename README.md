@@ -1,14 +1,18 @@
 # Schiavinato Sharing (HTML)
 
-[![Security: Experimental](https://img.shields.io/badge/Security-⚠️%20Experimental-red)](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Security: Experimental](https://img.shields.io/badge/Security-⚠️%20EXPERIMENTAL%20⚠️-red)](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md)
+[![CI](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/codeql.yml)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> ## ⚠️ EXPERIMENTAL - NOT AUDITED - DO NOT USE FOR REAL FUNDS
+> ## ⚠️ WARNING: EXPERIMENTAL SOFTWARE ⚠️
 > 
-> This specification has NOT been audited. Use only for testing, learning, and experimentation. **We invite cryptographers and developers to review the spec and contribute.**
-> 
-> **[See Security Status](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md) for details.**
+>DO NOT USE IT FOR REAL FUNDS!
+>
+> Schiavinato Sharing specification and implementations have NOT been audited. Use for testing, learning, and experimentation only. See [Security](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md) for details.
+>
+>We invite **cryptographers** and **developers** to review the spec and software. See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/CONTRIBUTING.md) to know more.
 
 **Single-file, air-gapped HTML implementation of Schiavinato Sharing**
 
@@ -18,13 +22,20 @@ Human-executable secret sharing for BIP39 mnemonics using GF(2053). Runs entirel
 
 ## What is this?
 
-A self-contained HTML/JavaScript application implementing the Schiavinato Sharing scheme. Designed for offline/air-gapped environments where computational convenience is preferred over manual math, but network access or software dependencies are unavailable or untrusted.
+**Schiavinato Sharing** is a dual-mode (**manual + software**) \(k\)-of-\(n\) threshold secret sharing scheme for **BIP39 mnemonics**. It operates directly on the **1-indexed BIP39 word indices** over the prime field **GF(2053)**, so the recovered secret is a standard BIP39 mnemonic compatible with modern wallets.
+
+**In this HTML implementation, you can:**
+
+- Split a BIP39 mnemonic into \(k\)-of-\(n\) shares
+- Recover the original BIP39 mnemonic from \(k\) shares
+- Validate inputs and share integrity during split/recovery to prevent silent mistakes
+
+It is a self-contained HTML/JavaScript application implementing the Schiavinato Sharing scheme. Designed for offline/air-gapped environments where computational convenience is preferred over manual math, but network access or software dependencies are unavailable or untrusted.
 
 **Key properties:**
 - Single file (all CSS/JS inline)
 - No external dependencies at runtime
 - Offline-capable by design
-- Manual-fallback compatible
 
 ---
 
@@ -148,19 +159,19 @@ Tests run automatically in CI on every push/PR.
 
 - **Spec version**: v0.4.0
 - **BIP39 word counts**: 12, 24
-- **Threshold schemes**: 2-of-3, 2-of-4, 3-of-5 (extensible to any k-of-n where k ≥ 2, n < 2053)
+- **Threshold schemes**: 2-of-3, 2-of-4, 3-of-5
 - **Browser requirements**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
 
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/CONTRIBUTING.md) in the canonical repo.
-
 When contributing:
 - Maintain single-file, self-contained design
 - Add/update tests for any behavioral changes
 - Run full test suite before submitting PR
+
+See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/CONTRIBUTING.md) to know more.
 
 ---
 
