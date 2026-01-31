@@ -14,5 +14,4 @@
 This repository **does not define its own security posture or disclosure process**.
 
 Use the canonical policy in:
-- `https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md`
-
+- [https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md)
