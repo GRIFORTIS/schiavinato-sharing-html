@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   secret-scan:
@@ -70,6 +71,15 @@ jobs:
 
       - name: Upload Playwright report
         if: always()
+        id: upload_playwright_report
+        uses: actions/upload-artifact@4c0ff1c489dca52fedb26375d7d8fe7bd9233f19 # v4.4.0
+        with:
+          name: playwright-report-${{ matrix.node-version }}
+          path: playwright-report/
+          retention-days: 30
+
+      - name: Retry upload Playwright report (once)
+        if: always() && steps.upload_playwright_report.outcome == 'failure'
         uses: actions/upload-artifact@4c0ff1c489dca52fedb26375d7d8fe7bd9233f19 # v4.4.0
         with:
           name: playwright-report-${{ matrix.node-version }}
@@ -78,6 +88,15 @@ jobs:
 
       - name: Upload test artifacts
         if: failure()
+        id: upload_test_results
+        uses: actions/upload-artifact@4c0ff1c489dca52fedb26375d7d8fe7bd9233f19 # v4.4.0
+        with:
+          name: test-results-${{ matrix.node-version }}
+          path: test-results/
+          retention-days: 7
+
+      - name: Retry upload test artifacts (once)
+        if: failure() && steps.upload_test_results.outcome == 'failure'
         uses: actions/upload-artifact@4c0ff1c489dca52fedb26375d7d8fe7bd9233f19 # v4.4.0
         with:
           name: test-results-${{ matrix.node-version }}
