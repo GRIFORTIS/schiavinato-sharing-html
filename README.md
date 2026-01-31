@@ -10,7 +10,7 @@
 > 
 >DO NOT USE IT FOR REAL FUNDS!
 >
-> Schiavinato Sharing specification and implementations have NOT been audited. Use for testing, learning, and experimentation only. See [Security](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md) for details.
+> Schiavinato Sharing specification and implementations have NOT been audited. Use for testing, learning, and experimentation only. See [SECURITY](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md) for details.
 >
 >We invite **cryptographers** and **developers** to review the spec and software. See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/CONTRIBUTING.md) to know more.
 
@@ -42,8 +42,8 @@ It is a self-contained HTML/JavaScript application implementing the Schiavinato 
 ## Links
 
 - **Canonical protocol + specs**: [schiavinato-sharing](https://github.com/GRIFORTIS/schiavinato-sharing)
-- **Whitepaper**: [PDF](https://github.com/GRIFORTIS/schiavinato-sharing/releases/latest/download/WHITEPAPER.pdf) | [LaTeX source](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/WHITEPAPER.tex)
-- **Test Vectors**: [TEST_VECTORS.md](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/TEST_VECTORS.md)
+- **Whitepaper**: [PDF](https://github.com/GRIFORTIS/schiavinato-sharing/releases/latest/download/WHITEPAPER.pdf) | [LaTeX](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/WHITEPAPER.tex)
+- **Test Vectors**: [TEST_VECTORS](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/TEST_VECTORS.md)
 - **JavaScript library**: [schiavinato-sharing-js](https://github.com/GRIFORTIS/schiavinato-sharing-js)
 - **Python library**: [schiavinato-sharing-py](https://github.com/GRIFORTIS/schiavinato-sharing-py)
 
@@ -55,7 +55,7 @@ This tool implements well-established cryptographic principles but has **NOT** b
 
 **Use only for**: testing, learning, experimentation.
 
-**Canonical security posture**: [schiavinato-sharing/SECURITY.md](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md)
+**Canonical security posture**: [schiavinato-sharing/SECURITY](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md)
 
 ---
 
@@ -149,7 +149,7 @@ Comprehensive Playwright test suite covering:
 ## Conformance Validation
 
 This implementation is validated against canonical test vectors:
-- [TEST_VECTORS.md](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/TEST_VECTORS.md)
+- [TEST_VECTORS](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/TEST_VECTORS.md)
 
 Tests run automatically in CI on every push/PR.
 
