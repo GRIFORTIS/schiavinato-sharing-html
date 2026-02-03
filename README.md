@@ -1,6 +1,6 @@
 # Schiavinato Sharing (HTML)
 
-[![Security: Experimental](https://img.shields.io/badge/Security-⚠️%20EXPERIMENTAL%20⚠️-red)](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md)
+[![Security: Experimental](https://img.shields.io/badge/Security-⚠️%20EXPERIMENTAL%20⚠️-red)](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/.github/SECURITY.md)
 [![CI](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/GRIFORTIS/schiavinato-sharing-html/actions/workflows/codeql.yml)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
@@ -10,9 +10,9 @@
 > 
 >DO NOT USE IT FOR REAL FUNDS!
 >
-> Schiavinato Sharing specification and implementations have NOT been audited. Use for testing, learning, and experimentation only. See [SECURITY](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md) for details.
+> Schiavinato Sharing specification and implementations have NOT been audited. Use for testing, learning, and experimentation only. See [SECURITY](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/.github/SECURITY.md) for details.
 >
->We invite **cryptographers** and **developers** to review the spec and software. See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/CONTRIBUTING.md) to know more.
+>We invite **cryptographers** and **developers** to review the spec and software. See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/.github/CONTRIBUTING.md) to know more.
 
 **Single-file, air-gapped HTML implementation of Schiavinato Sharing**
 
@@ -42,8 +42,8 @@ It is a self-contained HTML/JavaScript application implementing the Schiavinato 
 ## Links
 
 - **Canonical protocol + specs**: [schiavinato-sharing](https://github.com/GRIFORTIS/schiavinato-sharing)
-- **Whitepaper**: [PDF](https://github.com/GRIFORTIS/schiavinato-sharing/releases/latest/download/WHITEPAPER.pdf) | [LaTeX](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/WHITEPAPER.tex)
-- **Test Vectors**: [TEST_VECTORS](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/TEST_VECTORS.md)
+- **Whitepaper**: [PDF](https://github.com/GRIFORTIS/schiavinato-sharing/releases/latest/download/WHITEPAPER.pdf) | [LaTeX](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/whitepaper/WHITEPAPER.tex)
+- **Test Vectors**: [TEST_VECTORS](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/test_vectors/README.md)
 - **JavaScript library**: [schiavinato-sharing-js](https://github.com/GRIFORTIS/schiavinato-sharing-js)
 - **Python library**: [schiavinato-sharing-py](https://github.com/GRIFORTIS/schiavinato-sharing-py)
 
@@ -55,7 +55,7 @@ This tool implements well-established cryptographic principles but has **NOT** b
 
 **Use only for**: testing, learning, experimentation.
 
-**Canonical security posture**: [schiavinato-sharing/SECURITY](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/SECURITY.md)
+**Canonical security posture**: [schiavinato-sharing/SECURITY](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/.github/SECURITY.md)
 
 ---
 
@@ -116,40 +116,14 @@ sha256sum --check CHECKSUMS.txt --ignore-missing
 
 ## For Developers
 
-### Running Tests
-
-```bash
-# Install test dependencies
-npm ci
-
-# Install Playwright browser
-npx playwright install chromium
-
-# Run all tests
-npm test
-
-# Run with UI
-npm run test:ui
-
-# Run linter
-npm run lint
-```
-
-### Test Coverage
-
-Comprehensive Playwright test suite covering:
-- Happy path (split/recover for 2-of-3, 3-of-5 schemes)
-- Edge cases (invalid inputs, corrupted checksums, boundary conditions)
-- Validation (BIP39 checksum, input constraints, error handling)
-- GIC binding (share number validation)
-- Path mismatch detection (dual-path checksum validation)
+See [`TESTING.md`](./TESTING.md) for local test commands (CI parity), including Playwright installation and optional UI mode.
 
 ---
 
 ## Conformance Validation
 
 This implementation is validated against canonical test vectors:
-- [TEST_VECTORS](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/TEST_VECTORS.md)
+- [TEST_VECTORS](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/test_vectors/README.md)
 
 Tests run automatically in CI on every push/PR.
 
@@ -171,7 +145,7 @@ When contributing:
 - Add/update tests for any behavioral changes
 - Run full test suite before submitting PR
 
-See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/CONTRIBUTING.md) to know more.
+See [CONTRIBUTING](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/.github/CONTRIBUTING.md) to know more.
 
 ---
 
