@@ -42,7 +42,7 @@ It is a self-contained HTML/JavaScript application implementing the Schiavinato 
 ## Links
 
 - **Canonical protocol + specs**: [schiavinato-sharing](https://github.com/GRIFORTIS/schiavinato-sharing)
-- **Whitepaper**: [PDF](https://github.com/GRIFORTIS/schiavinato-sharing/releases/latest/download/WHITEPAPER.pdf) | [LaTeX](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/whitepaper/WHITEPAPER.tex)
+- **Whitepaper**: [PDF (latest)](https://github.com/GRIFORTIS/schiavinato-sharing/releases/latest/download/WHITEPAPER.pdf) | [Releases (versioned PDF)](https://github.com/GRIFORTIS/schiavinato-sharing/releases) | [LaTeX](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/whitepaper/WHITEPAPER.tex)
 - **Test Vectors**: [TEST_VECTORS](https://github.com/GRIFORTIS/schiavinato-sharing/blob/main/test_vectors/README.md)
 - **JavaScript library**: [schiavinato-sharing-js](https://github.com/GRIFORTIS/schiavinato-sharing-js)
 - **Python library**: [schiavinato-sharing-py](https://github.com/GRIFORTIS/schiavinato-sharing-py)
@@ -116,7 +116,7 @@ sha256sum --check CHECKSUMS.txt --ignore-missing
 
 ## For Developers
 
-See [`TESTING.md`](./TESTING.md) for local test commands (CI parity), including Playwright installation and optional UI mode.
+See [`TESTING`](./TESTING.md) for local test commands (CI parity), including Playwright installation and optional UI mode.
 
 ---
 

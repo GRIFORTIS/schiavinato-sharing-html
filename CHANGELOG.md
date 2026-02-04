@@ -3,7 +3,7 @@
 All notable changes to the **HTML implementation** will be documented in this file.
 
 Protocol/spec changes belong in the canonical repo:
-- `https://github.com/GRIFORTIS/schiavinato-sharing`
+- [schiavinato-sharing](https://github.com/GRIFORTIS/schiavinato-sharing)
 
 ## Unreleased
 
